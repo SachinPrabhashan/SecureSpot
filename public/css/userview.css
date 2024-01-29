@@ -1,0 +1,765 @@
+:root {
+    --primarycolor2: rgb(108, 84, 230);
+    --secondarycolor: rgb(176, 160, 255);
+}
+
+body {
+    background: #eee;
+}
+
+table {
+    font-size: 10pt;
+}
+
+.note {
+    font-size: 8pt;
+    color: red;
+}
+
+.attention-note {
+    color: #B85450;
+    background-color: #ffc2c0;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.attention-note-1{
+    color: #B85450;
+    background-color: #ffc2c0;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 50px;
+
+}
+/* Dashboard CSS here */
+
+.dash-summary-icon {
+    display: flex;
+    gap: 1em;
+    margin: 20px;
+}
+
+.clock-digital{
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #cbffc1;
+    width: fit-content;
+    background-color: #78A94E;
+    justify-content: center;
+}
+
+.acc-bal-dis{
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+    background-color: #8a712c;
+    justify-content: center;
+}
+
+
+
+/* 'Status' Icon CSS Properties Here */
+.delete-status {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.ongoing-status {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.notavailable {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.available {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.pending {
+    font-size: 8pt;
+    color: #000000;
+    background-color: #ffc400;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.approve {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.reject {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.processing {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #8400ff;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.complete {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #006eff;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+
+
+.review {
+    font-size: 9pt;
+    color: #ffffff;
+    background-color: #0d9b48;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.chargerdisplay {
+    color: #eb5f5b;
+    font-weight: bold;
+}
+
+.refunddisplay {
+    color: #0d9b48;
+    font-weight: bold;
+}
+
+
+
+
+
+/* 5 Star rating part css here */
+.height-100 {
+    height: 100vh;
+}
+
+/* .card{
+        width:380px;
+        border:none;
+        height:280px;
+    } */
+
+.ratings {
+    margin-right: 10px;
+}
+
+.ratings i {
+
+    color: #cecece;
+    font-size: 20px;
+}
+
+.rating-color {
+    color: #fbc634 !important;
+}
+
+.review-count {
+    font-weight: 400;
+    margin-bottom: 2px;
+    font-size: 24px !important;
+}
+
+.small-ratings i {
+    color: #cecece;
+}
+
+.review-stat {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.booking-detail-tb label.rate-topic {
+    margin-bottom: 0px;
+}
+
+.review-modal {
+    margin-left: 25px;
+}
+
+.rate-stars {
+    color: #ffc700;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+
+
+/*System Content Page Loading transition time*/
+.dashboard-content {
+    animation: transitionIn 0.7s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    background-color: rgb(108, 84, 230);
+}
+
+#side_nav {
+    background: #000;
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+li::marker {
+    color: transparent;
+}
+
+button.navbar-toggler {
+    border: none;
+}
+
+a.sidebaritem {
+    font-size: 10pt;
+}
+
+.sidebaritem.active {
+    color: var(--secondarycolor);
+}
+
+a.sidebaritem:hover {
+    color: var(--secondarycolor);
+    transition: 0.25s ease-in-out;
+}
+
+a.submenuitem {
+    font-size: 9pt;
+}
+
+.vertical-submenu {
+    position: static;
+    display: none;
+}
+
+.vertical-submenu.show {
+    display: block;
+}
+
+
+a.submenuitem.active {
+    font-size: 9pt;
+    color: rgb(176, 160, 255);
+}
+
+span i {
+    margin-inline-start: 25px;
+    margin-inline-end: auto;
+}
+
+
+.path-name {
+    font-size: 10pt;
+    color: #808080;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+div.card {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.acc-bal {
+    background-color: #D5E8D4;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 15px;
+
+    justify-content: flex-end;
+}
+
+.acc-bal-1{
+    background-color: #D5E8D4;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.acc-bal-1 p {
+    margin-bottom: 0;
+}
+
+.acc-bal p {
+    margin-bottom: 0;
+}
+
+div.flexarea-1 {
+    display: flex;
+}
+
+.date-time-select,
+.date-time-select-2,
+.time-div {
+    display: flex;
+}
+
+.date-time-select {
+    margin: 0px 30px 10px 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.date-time-select-2 {
+    margin: 20px 30px 10px 30px;
+    padding: 10px;
+    gap: 5em;
+    justify-content: center;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+
+.date-div {
+    width: 20%;
+    margin: 0 40px 0 0px;
+    /* top right bottom left */
+}
+
+.start-time,
+.end-time {
+    margin: 0 40px 0 30px;
+}
+
+/* .locker {
+    position: relative;
+} */
+
+
+.lk-btn {
+    margin-left: 15px;
+}
+
+div .locker-item {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.lkr-search-btn {
+    margin-top: 24px;
+}
+
+.lockers {
+    display: flex;
+}
+
+.locker-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div.locker-sec {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.clearbtn {
+    margin-left: 10px;
+}
+
+.locker {
+    position: relative;
+}
+
+.locker input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.locker label {
+    display: block;
+    padding: 10px;
+    background-color: #78A94E;
+    border: #2D7600 solid 1px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*If Locker Status Booked*/
+label.booked {
+    display: block;
+    padding: 10px;
+    background-color: #F8CECC;
+    border: #B85450 solid 1px;
+    border-radius: 10px;
+    color: #B85450;
+}
+
+/*If Locker Status Disable*/
+label.disable {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: #424242 dotted 1px;
+    border-radius: 10px;
+    color: #666666;
+}
+
+.locker input[type="checkbox"]:checked+label {
+    background-color: var(--primarycolor2);
+    border: #bbb solid 1px;
+}
+
+p.terms-cond {
+    font-size: 6pt;
+    display: flex;
+    justify-content: flex-end;
+    cursor: default;
+}
+
+.booking-detail-tb {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+/* .booking-detail-tb th {
+    background-color: #a9c4ff;
+}
+
+.booking-detail-tb table {
+    border: #c7d0ff solid 1px;
+}
+
+.booking-detail-tb td {
+    border: #c7d0ff solid 1px;
+    text-align: center;
+}
+
+.booking-detail-tb th {
+    border: #c7d0ff solid 1px;
+} */
+
+.booking-detail-tb label {
+    margin-bottom: 10px;
+}
+
+div.book-sum-tb {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    margin-bottom: 30px;
+    background-color: #d6d6d6;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+div.book-sum-tb td,
+div.book-sum-tb th {
+    font-size: 15pt;
+}
+
+
+div.book-sum-tb td {
+    /* background-color: #f4f1ff; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+
+
+.bookingframe1 .card {
+    height: 600px;
+}
+
+
+.bkng-alert {
+    max-height: 60px;
+}
+
+/* div .bkng-alert .card-body .alert{
+    font-size: 10pt;
+} */
+
+/*Booking History*/
+.book-his-tb {
+    margin: 5px 30px 30px 30px;
+}
+
+/*Payment Css Here */
+.select-payment-date {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.select-payment-date input {
+    width: 250px;
+}
+
+
+.book-pay-his-tb {
+    margin: 5px 30px 30px 30px;
+}
+
+.btn-bar {
+    margin: 0px 30px 10px 30px;
+}
+
+div.payment-card{
+    height: 630px;
+    position: relative;
+}
+
+
+/* Contact View Css Start From Here */
+.message-area {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-area h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.sub-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-email-phone {
+    display: flex;
+}
+
+.contact-email-phone #email {
+    width: 47%;
+}
+
+.contact-email-phone #phone {
+    width: 47%;
+    margin-left: 6%;
+}
+
+.contact-number {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 30px;
+}
+
+/* Profile View Css Start From Here */
+.topic {
+    text-align: center;
+}
+
+.user-detail-sec {
+    display: flex;
+    margin: 30px;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.user-detail-sec img {
+    margin: 10px;
+}
+
+.pro-details {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+
+.pro-details table td {
+    padding-left: 30px;
+}
+
+.pro-details table th,
+.pro-details table td {
+    padding-bottom: 10px;
+}
+
+.profile-update {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Modal CSS Properties Here */
+.modal-dialog .modal-title h1 {
+    font-size: 11pt;
+}
+
+.modal-dialog .modal-footer button {
+    font-size: 10pt;
+}
+
+
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+
+    .lockers {
+        display: flex;
+        scale: 60%;
+    }
+
+    .date-time-select,
+    .time-div {
+        display: block;
+        width: max-content;
+    }
+
+    .date-div {
+        width: max-content;
+        margin: 0 40px 0 30px;
+        /* top right bottom left */
+    }
+
+}

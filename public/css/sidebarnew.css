@@ -1,0 +1,686 @@
+:root {
+    --primarycolor2: #f05e39;
+}
+
+
+body {
+    background: #eee;
+}
+
+table {
+    font-size: 10pt;
+}
+
+.action-td {
+    display: flex;
+    justify-content: center;
+}
+
+/* Modal CSS Properties Here */
+.modal-dialog .modal-title h1 {
+    font-size: 11pt;
+}
+
+.modal-dialog .modal-footer button {
+    font-size: 10pt;
+}
+
+/* 'Status' Icon CSS Properties Here */
+.delete-status {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.ongoing-status {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.notavailable {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.available {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.pending {
+    font-size: 8pt;
+    color: #000000;
+    background-color: #ffc400;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.approve {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.reject {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.processing {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #8400ff;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.complete {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #006eff;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+
+
+.review-unread {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #eb5f5b;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.review-read {
+    font-size: 8pt;
+    color: #ffffff;
+    background-color: #4a9940;
+    padding: 0px 7px 0px 7px;
+    border-radius: 10px;
+}
+
+.key-return-confirm-modal {
+    text-align: center;
+}
+
+
+.chargerdisplay {
+    color: #eb5f5b;
+    font-weight: bold;
+}
+
+.refunddisplay {
+    color: #0d9b48;
+    font-weight: bold;
+}
+
+/*System Content Page Loading transition time*/
+.dashboard-content {
+    animation: transitionIn 0.7s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li::marker {
+    color: transparent;
+}
+
+#side_nav {
+    background: #000;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+hr.h-color {
+    background: #eee;
+}
+
+.sidebar li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+
+}
+
+.sidebar li a {
+    color: #fff;
+}
+
+button.navbar-toggler {
+    border: none;
+}
+
+a.sidebaritem {
+    font-size: 10pt;
+}
+
+a.sidebaritem:hover {
+    color: #398ef0;
+    transition: 0.25s ease-in-out;
+}
+
+a.submenuitem {
+    font-size: 9pt;
+
+}
+
+.vertical-submenu {
+    position: static;
+    display: none;
+}
+
+.vertical-submenu.show {
+    display: block;
+}
+
+a.submenuitem.active {
+    font-size: 9pt;
+    color: #398ef0;
+}
+
+span i {
+    margin-inline-start: 25px;
+    margin-inline-end: auto;
+}
+
+.navbar {
+    background-color: #398ef0;
+}
+
+.path-name {
+    font-size: 10pt;
+    color: #808080;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+.flexarea-1 hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Dashboard CSS here */
+
+.dash-summary-icon {
+    display: flex;
+    gap: 1em;
+    margin: 30px;
+}
+
+.dash-item {
+    display: flex;
+    justify-content: center;
+}
+
+div.dash-card {
+    height: 630px;
+}
+
+.dash-item-1-user {
+    background: rgb(138, 213, 132);
+    background: linear-gradient(0deg, rgba(138, 213, 132, 1) 0%, rgba(36, 193, 194, 1) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 38pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    transition: 0.3s ease-in-out;
+}
+
+.dash-item-1-user:hover {
+    background: rgb(138, 213, 132);
+    background: linear-gradient(0deg, rgba(138, 213, 132, 1) 0%, rgba(36, 193, 194, 1) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 38pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    scale: 102%;
+    transition: 0.3s ease-in-out;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dash-item-2-locker {
+    background: rgb(213, 176, 132);
+    background: linear-gradient(0deg, rgba(213, 176, 132, 1) 0%, rgba(194, 89, 36, 1) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 38pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    transition: 0.3s ease-in-out;
+}
+
+.dash-item-2-locker:hover {
+    background: rgb(213, 176, 132);
+    background: linear-gradient(0deg, rgba(213, 176, 132, 1) 0%, rgba(194, 89, 36, 1) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 38pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    scale: 102%;
+    transition: 0.3s ease-in-out;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dash-item-3 {
+    background: rgb(132, 135, 213);
+    background: linear-gradient(0deg, rgba(132, 135, 213, 1) 0%, rgba(118, 36, 194, 1) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    transition: 0.3s ease-in-out;
+}
+
+.dash-item-3:hover {
+    background: rgb(132, 135, 213);
+    background: linear-gradient(0deg, rgba(132, 135, 213, 1) 0%, rgba(118, 36, 194, 1) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    scale: 102%;
+    transition: 0.3s ease-in-out;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dash-item-4-allbook {
+    background: rgb(218, 151, 34);
+    background: linear-gradient(0deg, rgba(218, 151, 34, 1) 0%, rgb(228, 216, 0) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    transition: 0.3s ease-in-out;
+}
+
+.dash-item-4-allbook:hover {
+    background: rgb(218, 151, 34);
+    background: linear-gradient(0deg, rgba(218, 151, 34, 1) 0%, rgba(228, 216, 0) 100%);
+    padding: 25px 50px 25px 50px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    width: fit-content;
+
+    transition: 0.3s ease-in-out;
+
+    scale: 102%;
+    transition: 0.3s ease-in-out;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Admin User Messages CSS here */
+.user-messages-view {
+    display: flex;
+}
+
+.user-messages-view .card1 {
+    display: flex;
+    width: 20rem;
+    margin: 0px 15px 2px 30px;
+    height: max-content;
+}
+
+.message-sum {
+    margin-bottom: 30px;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.user-messages h5 {
+    margin-left: 30px;
+}
+
+.msg-name-date {
+    display: flex;
+}
+
+.msg-date {
+    font-size: 8pt;
+    margin-left: auto;
+    margin-right: 2px;
+    margin-top: 4px;
+    justify-items: flex-end;
+}
+
+.msg-email,
+.msg-phone {
+    font-size: 9pt;
+}
+
+.full-msg {
+    margin-top: 10px;
+}
+
+.card1:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.3s;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(223, 223, 223, 1) 0%, rgba(0, 212, 255, 0) 100%);
+    cursor: pointer;
+}
+
+.card2 {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 30px;
+    height: 480px;
+}
+
+.card1 .card-msg {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.msg-name-date h6,
+.msg-date {
+    margin-bottom: 0px;
+}
+
+/*Locker CSS here*/
+
+.locker-add-sec {
+    margin: 0 30px 30px 30px;
+}
+
+.locker-add-sec-input {
+    display: flex;
+    gap: 2em;
+}
+
+.locker-add-sec-input #pos-x {
+    width: 100px;
+    max-width: 1;
+}
+
+.locker-add-sec-input #pos-y {
+    width: 100px;
+}
+
+button.addbtn {
+    margin-top: 1.5em;
+    margin-bottom: auto;
+    width: 50px;
+}
+
+.edit-popup-modal {
+    display: block;
+    gap: 1em;
+}
+
+.statusdrop {
+    width: fit-content;
+}
+
+.edit-popup-modal input.form-control {
+    width: fit-content;
+    font-size: medium;
+}
+
+.new-locker button {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.locker-price {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.add-new-user {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+/*Lockers Visually Representation CSS here*/
+.lk-btn {
+    margin-left: 15px;
+}
+
+div .locker-item {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.lockers {
+    display: flex;
+}
+
+.locker-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+div.locker-sec {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.clearbtn {
+    margin-left: 10px;
+}
+
+.locker {
+    position: relative;
+}
+
+.locker input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.locker label {
+    display: block;
+    padding: 10px;
+    background-color: #78A94E;
+    border: #2D7600 solid 1px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.locker input[type="checkbox"]:checked+label {
+    background-color: var(--primarycolor2);
+    border: #bbb solid 1px;
+}
+
+.locker-manage-tb {
+    margin: 0 30px 30px 30px;
+}
+
+/* Feedback Css here */
+.review-tb-area {
+    margin: 5px 30px 30px 30px;
+}
+
+/* User Management */
+.all-user-tb {
+    margin: 0px 30px 30px 30px;
+}
+
+/*Payment Css Here */
+.find-student-sec-2 {
+    margin: 0 30px 10px 30px;
+    display: flex;
+    width: 250px;
+}
+
+.find-student-sec-1 {
+    margin: 0 30px 10px 30px;
+}
+
+form h4 {
+    margin-left: 30px;
+}
+
+.fc {
+    display: flex;
+    gap: 2em;
+}
+
+.btn-bar {
+    margin: 0px 30px 10px 30px;
+}
+
+.paycard-area,
+.paycash-area {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paycard-area {
+    display: none;
+    animation: transitionIn 0.7s;
+}
+
+.paycard-area.show {
+    display: block;
+    animation: transitionIn 0.7s;
+}
+
+.paycash-area {
+    display: none;
+    animation: transitionIn 0.7s;
+}
+
+.paycash-area.show {
+    display: block;
+    animation: transitionIn 0.7s;
+}
+
+.fc2 input[type="radio"],
+.fc1 input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fg {
+    margin: 0 40px 10px 40px;
+}
+
+.fg label {
+    margin-left: 30px;
+}
+
+.payment-user-tb {
+    margin: 0px 30px 30px 30px;
+}
+
+.payment-area {
+    margin: 0px 30px 30px 30px;
+}
+
+.payment-his-tb {
+    margin: 0px 30px 30px 30px;
+}
+
+/*Booking History*/
+.book-his-tb {
+    margin: 10px 30px 30px 30px;
+}
+
+
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: absolute;
+        min-height: 100vh;
+        z-index: 1;
+
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+
+    .lockers {
+        display: flex;
+        scale: 60%;
+    }
+}

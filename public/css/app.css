@@ -1,0 +1,55 @@
+/*Variable*/
+
+
+/* btn-primary css */
+/* button.btn-primary{
+    background-color: #fff;
+    border: var(--primarycolor) solid;
+    border-radius: 15px;
+    color: var(--primarycolor);
+} */
+
+/* button.btn-primary:hover{
+    background-color: #fff;
+    border: var(--primarycolor) solid;
+    color: var(--primarycolor);
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--primarycolor);
+} */
+
+/* button.btn-danger{
+    background-color: var(--primarycolor);
+    border: var(--primarycolor) solid;
+    border-radius: 15px;
+    color: #fff;
+} */
+
+
+/* form input field css */
+/* input.form-control:focus {
+    border-color: var(--primarycolor) ;
+    box-shadow: 0 0 5px var(--primarycolor);
+} */
+
+/* select.form-control:focus {
+    border-color: var(--primarycolor) ;
+    box-shadow: 0 0 5px var(--primarycolor);
+} */
+
+div.card-header{
+    background-color: #fff;
+    border-bottom: hidden;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+div.card{
+    background-color: #fff;
+}
+
+svg.bi-person-circle{
+    margin-left: auto;
+    margin-right: auto;
+}
+

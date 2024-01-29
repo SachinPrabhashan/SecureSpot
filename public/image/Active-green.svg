@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 334" width="1200" height="334">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #c5ff92 } 
+		.t1 { font-size: 200px;fill: #263b12;font-weight: 400;font-family: "ArialMT", "Arial" } 
+	</style>
+	<path id="Background" class="s0" d="m183 54c0-27.6 22.4-50 50-50h737c27.6 0 50 22.4 50 50v228c0 27.6-22.4 50-50 50h-737c-27.6 0-50-22.4-50-50z"/>
+	<text id="" style="transform: matrix(1,0,0,1,260,-4)" >
+	</text>
+	<text id="Active" style="transform: matrix(1,0,0,1,606,239.188)" >
+		<tspan x="-285.8" y="0" class="t1">A</tspan><tspan  y="0" class="t1">c</tspan><tspan  y="0" class="t1">t</tspan><tspan  y="0" class="t1">i</tspan><tspan  y="0" class="t1">v</tspan><tspan  y="0" class="t1">e
+</tspan>
+	</text>
+	<text id="" style="transform: matrix(1,0,0,1,183,145)" >
+	</text>
+</svg>
